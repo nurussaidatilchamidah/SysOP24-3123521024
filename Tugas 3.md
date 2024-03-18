@@ -34,13 +34,43 @@ Peran Sistem Operasi : Sistem operasi (OS) bertindak sebagai perantara antara pe
   
 ![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/94fb7976-3326-47a1-a1de-5ebf846bdb2a)
 
-- $ iops64 $(nproc)
-  
-![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/63f53dce-ad4f-48f9-90df-893fb289e9a6)
+- percobaan 1
 
-- $ flops64 $(nproc)
+$ iops64 $(nproc)   dan   $ flops64 $(nproc)
+
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/ae9f3931-f027-4f1e-a9dc-c24c13767894)
+
+- percobaan 2
+
+$ iops64 $(nproc)   dan   $ flops64 $(nproc)
+
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/715f822a-6edb-4f91-adfd-bd8ad793f04d)
+
+- percobaan 3
   
-![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/35d1b32f-196d-4914-a44b-e118f4aea1fb)
+$ iops64 $(nproc)   dan   $ flops64 $(nproc)
+
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/e178c817-968b-467e-b4f2-d603778434f7)
+
+- percobaan 4
+  
+$ iops64 $(nproc)   dan   $ flops64 $(nproc)
+
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/8ee63d75-3317-4e95-8b9c-1eb376517c5a)
+
+
+- percobaan 5
+  
+$ iops64 $(nproc)   dan  $ flops64 $(nproc)
+
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/8dc627e3-e9e9-42aa-a8d3-7d14324d8135)
+
+
+
+
+
+
+
   
 
 
