@@ -214,3 +214,57 @@ $ cat out
 ![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/d25fa117-ad4b-46ef-9456-ccf1714a2c86)
 ![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/ef081ad6-f533-466e-ab20-ec8e960eee8f)
 <br> Analisa : selain itu  operator Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
+
+### LATIHAN :
+1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru. <br>
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/e669afa3-e211-405d-9367-a75511fd4a69)
+<br> analisa : Untuk melihat daftar direktori aktif, gunakan perintah $ ls, sedangkan untuk membelokkan tampilan standard output ke file baru, gunakan “>”
+
+2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya. <br>
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/ec35ee93-4bf7-4bf9-ae41-68d11576695f)
+<br> analisa : Untuk melihat daftar lengkap dari direktori /etc/passwd, gunakan perntah $ ls, sedangkan untuk membelokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya, gunakan ‘>>’
+
+3. Urutkan file baru dengan cara membelokkan standard input. <br>
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/9257c761-9e96-4de1-8faa-dd9b741b2ae4)
+<br> analisa : Untuk mengurutkan file, gunakan perintah $ sort, sedangkan untuk membelokkan standard input, gunakan ‘<’
+
+4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut. <br>
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/0b9a2ee9-0241-420f-a977-b800d29e3608)
+<br> analisa : Untuk mengurutkan file, gunakan perintah $ sort, sedangkan untuk membelokkan standard input, gunakan ‘’. Pembelokan standart input dan standart output dapat dikombinasikan asalkan tidak boleh menggunakan nama file yang sama sebagai standart input dan output
+
+5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/08fc4351-6e25-4875-8363-d068deeedc91)
+<br> analisa : Gunakan perintah $ mkdir untuk membuat direktori baru. Saat membuat direktori yang sama sebanyak dua kali, akan muncul pesan error. Pesan error itu kemudian dibelokkan ke file dengan menggunakan ‘2>’
+
+6. Urutkan kalimat berikut :
+```
+Jakarta
+Bandung
+Surabaya
+Padang
+Palembang
+Lampung
+```
+Dengan menggunakan notasi here document (<@@@ ...@@@) . HINT <br>
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/c787758c-a106-4945-bdcd-c56e33ac7e67)
+<br> analisa : Pertama, buat notasi here document yang akan dibelokkan ke sebuah file kemudian isi document tersebut. Setelah diisi dan diakhiri, isi dokumen akan tersimpan ke file yang dibelokkan. File tersebut kemudian diurutkan menggunakan perintah $ sort
+
+7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru. <br>
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/982a4439-c514-48cc-9189-95837691960b)
+<br> analisa : Untuk mendapatkan jumlah baris, kata, dan karakter (secara berurutan) dari sebuah file, gunakan perintah wc yang dipipakan dengan perintah cat. Hasilnya kemudian bisa ditambahkan ke file menggunakan ‘>>’
+
+8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
+```
+ $ cat > hello.txt
+ dog cat
+ cat duck
+ dog chicken
+ chicken duck
+ chicken cat
+ dog duck
+ [Ctrl-d]
+ $ cat hello.txt | sort | uniq
+ $ cat hello.txt | grep “dog” | grep –v “cat”
+```
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/bada6026-0c4c-4556-a1a2-7b76cddaa920)
+<br> analisa : Uniq digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, Grep digunakan untuk menyaring masukannya dan menampilkan baris-baris yang hanya mengandung pola yang ditentukan. 
