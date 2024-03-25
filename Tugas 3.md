@@ -1,20 +1,52 @@
 # Tugas 3
 **1. Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operasi.**
 
-#### Siklus CPU: Fetch, Decode, Execute
+#### Siklus CPU: Fetch, Decode, Execute <br>
+Central Processing Unit atau CPU terhubung ke semua perangkat lain yang membuatnya berfungsi. setiap detik, CPU melewati langkah yang disebut Fetch-Decode-Execute. Di CPU memiliki 3 register : bit penyimpanan (tempat menyimpan nilai-nilai yang sedang dikerjakan saat ini), register yang melacak siklus instruksi kita, dan akumulator. lalu, tempat untuk menyimpan intruksi dan nilai apapun yang kita hitung disebut RAM. <br>
+Pada setiap detik, CPU akan melakukan salah satu dari tiga hal berikut :
 - Fetch (Ambil) <br>
-a. Proses dimulai dengan CPU mengambil instruksi dari memori utama (RAM) ke dalam register instruksi. <br>
-b. Alamat instruksi disediakan oleh program counter (PC). <br>
-c. Instruksi tersebut akan diambil ke dalam register instruksi untuk proses selanjutnya.
-
-- Decode (Dekode) <br>
-a. Instruksi yang diambil dari memori di-dekode oleh CPU. <br>
-b. CPU menafsirkan instruksi tersebut untuk mengetahui operasi apa yang harus dilakukan. <br>
-c. Dekoding melibatkan memahami opcode (kode operasi) dan operand (data yang diperlukan untuk operasi).
-
+- Decode (Memecahkan) <br>
 - Execute (Eksekusi) <br>
-a. Setelah instruksi di-dekode, CPU mengeksekusi operasi yang ditentukan oleh instruksi tersebut. <br>
-b. Operasi bisa berupa manipulasi data, pemrosesan logika, pengambilan keputusan, atau transfer data antar register atau memori.
+
+![0](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/02511fe1-6442-4534-80ce-108b4d174beb)
+
+##### [ Fetch, program counter diatur ke 0, lalu CPU mengambil intruksi pada alamat 0 di memori dan memasukkannya ke dalam register intruksi ]
+![1](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/348667de-56c0-45be-91cc-48efe71e4bda)
+
+##### [ Decode, CPU menerjemahkan intruksi. bagian pertama adalah intruksi dan bagian kedua adalah lokasi. intruksinya adalah LOAD dan alamatnya adalah 6 jadi, kita akan memuat nilai di alamat 6 ke dalam akumulator ]
+![2](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/35467dbb-9aa2-4a53-9d41-01987231a567)
+
+##### [ Execute, CPU mengeksekusi instruksi ini dibutuhkan nilai di alamat 6 dan memuatnya ke akumulator. dalam hal ini nilainya adalah 1 ]
+![3](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/f56b2864-5aea-4b30-b846-557b36fa6384)
+
+##### [ Fetch, penghitung program bertambah dan CPU mengambil intruksi berikutnya di bit memori berikutnya ]
+![4](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/f39429a6-3a42-41af-a40f-a0f3a478dc7c)
+
+##### [ Decode, CPU menerjemahkan intruksi. kali ini ADD dan alamatnya 7, jadi di alamat 7 akan ditambahkan apa yang sudah ada di akumulator ]
+![5](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/f55d478f-a9dc-4de6-816a-38a6f3bf356a)
+
+##### [ Execute, CPU mengeksekusi interaksi lalu tambahkan nilainya di alamat 7. dalam hal ini, nilainya 1 jadi 1 + 1 = 2 ]
+![6](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/87f9de7c-ae82-4699-9343-e86e0a85122b)
+
+##### [ Fetch, dari lokasi memori berikutnya nomor 2 ]
+![7](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/8c3f7d06-23be-4d59-b382-79c5bdd25d88)
+
+##### [ Decode, intruksi untuk menyimpan nilai yang ada di akumulator ke dalam RAM di alamat 6 ]
+![8](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/1d74c3e9-604a-4074-ba3c-d6061e50f811)
+
+##### [ Execute, sekarang alamat 6 memiliki 2 di dalamnya bukan 1 ]
+![9](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/3dd76b24-143a-4b90-ab17-2eb603a2db5e)
+
+##### [ Fetch, intruksi baru JUMP (dengan lompatan) alamat berikutnya yang kita ambil adalah alamat yang ada di dalam instruksi ini ]
+![10](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/b289c86c-5755-4c9c-9b86-4d122f803cdc)
+
+##### [ Decode, lompat ke alamat nomor 1 ]
+![11](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/358a18b0-93c9-49d8-b6c7-1d0ff6818465)
+
+##### [ Execute, penghitung program kembali ke 1 ]
+![12](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/c90247e9-4d41-4276-9a3e-090d7f7aa9fa)
+
+#### Kemampuan untuk melompat, mengulang,  dan membuat instruksi adalah salah satu dasar ilmu komputer. jadi kembali ke atas, Fetch, Decode, lalu Execute program ini akan terus berulang hingga jumlahnya menjadi sangat besar sehingga bisa tidak lagi dipegang oleh alamat memori
 
 #### Peran Bahasa Pemrograman : 
 Bahasa pemrograman adalah cara bagi manusia untuk berkomunikasi dengan komputer. Memungkinkan programmer menulis kode dengan menggunakan struktur dan sintaks tertentu yang dapat dimengerti oleh komputer. Bahasa pemrograman menyediakan berbagai fitur dan abstraksi untuk memudahkan pengembangan perangkat lunak.
