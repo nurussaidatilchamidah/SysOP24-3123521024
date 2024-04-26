@@ -33,6 +33,12 @@ terjadi child process lalu baris kedua parent process dan baris ketiga owner pro
 - fork03.c <br>
 ![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/46e97953-4102-4e98-9893-2f8433552510)
 <br> **hasil diatas menunjukkan proses yang sedang berjalan serta ID unik dari masing-masing proses tersebut** <br> 
+- orphan.c <br>
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/f29bdd0f-57ef-4a2d-8e7f-1c3db6f13136) 
+- zombie.c <br>
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/7fcbdc3e-8f89-4748-8de1-35b776c11591)
+
+
 
 
 
