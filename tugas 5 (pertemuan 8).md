@@ -34,10 +34,12 @@ terjadi child process lalu baris kedua parent process dan baris ketiga owner pro
 ![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/46e97953-4102-4e98-9893-2f8433552510)
 <br> **hasil diatas menunjukkan proses yang sedang berjalan serta ID unik dari masing-masing proses tersebut** <br> 
 - orphan.c <br>
-![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/f29bdd0f-57ef-4a2d-8e7f-1c3db6f13136) 
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/f29bdd0f-57ef-4a2d-8e7f-1c3db6f13136)
+<br> **Orphan Process adalah sebuah proses yang ada dalam komputer dimana parent process telah selesai aatu berhenti bekerja
+namun proses anak (child process) sendiri tetap berjalan.** <br>
 - zombie.c <br>
 ![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/7fcbdc3e-8f89-4748-8de1-35b776c11591)
-
+<br> **Zombie Process terjadi karena adaanya child process yang di exit namun parrent processnya tidak tahu bahwa child process tersebut telah di terminate. Sehingga parent process tidak merelease process yang masih digunakan oleh child process tersebut walaupun process tersebut sudah mati.**
 
 
 
