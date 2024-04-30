@@ -1,5 +1,5 @@
-#Topik 1 <br>
-Sejarah OS <br>
+# Topik 1 <br>
+# Sejarah OS <br>
 1.	Apa hubungan antara perangkat lunak aplikasi dan sistem operasi?
 Hubungan antara perangkat lunak aplikasi (software) dan sistem operasi secara umum, sistem operasi adalah software pada lapisan pertama yang ditaruh pada memori komputer pada saat komputer dinyalakan. Sedangkan software-software lain nya dijalankan setelah sistem operasi berjalan dan sistem operasi akan melakukan layanan inti untuk software tersebut.
 2.	Apa yang dimaksud dengan sistem operasi? Apakah itu perangkat keras atau perangkat lunak?
