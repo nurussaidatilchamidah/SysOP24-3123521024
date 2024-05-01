@@ -1,4 +1,4 @@
-# TUGAS 5 (pertemuan ke-8)
+# TUGAS 5 (pertemuan ke-9)
 ## hubungan arsitektur CPU dengan arsitektur OS <br>
 Arsitektur CPU dan arsitektur sistem operasi (OS) saling berhubungan erat karena keduanya berperan penting dalam 
 menjalankan aplikasi dan memproses instruksi-instruksi komputer. Berikut adalah beberapa aspek hubungan antara keduanya : <br>
