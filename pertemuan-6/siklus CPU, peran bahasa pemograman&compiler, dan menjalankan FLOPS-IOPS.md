@@ -1,4 +1,4 @@
-# Tugas 3
+# Tugas 3.1
 **1. Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operasi.**
 
 #### Siklus CPU: Fetch, Decode, Execute <br>
@@ -48,6 +48,7 @@ Pada setiap detik, CPU akan melakukan salah satu dari tiga hal berikut :
 
 #### Kemampuan untuk melompat, mengulang,  dan membuat instruksi adalah salah satu dasar ilmu komputer. jadi kembali ke atas, Fetch, Decode, lalu Execute program ini akan terus berulang hingga jumlahnya menjadi sangat besar sehingga bisa tidak lagi dipegang oleh alamat memori
 
+# Tugas 3.3
 #### Peran Bahasa Pemrograman : 
 Bahasa pemrograman adalah cara bagi manusia untuk berkomunikasi dengan komputer. Memungkinkan programmer menulis kode dengan menggunakan struktur dan sintaks tertentu yang dapat dimengerti oleh komputer. Bahasa pemrograman menyediakan berbagai fitur dan abstraksi untuk memudahkan pengembangan perangkat lunak.
 
@@ -57,6 +58,7 @@ Compiler adalah perangkat lunak yang menerjemahkan kode sumber dalam bahasa pemr
 #### Peran Sistem Operasi : 
 Sistem operasi (OS) bertindak sebagai perantara antara perangkat keras komputer dan perangkat lunak aplikasi. Mengelola sumber daya sistem seperti CPU, memori, dan perangkat input/output. Menyediakan antarmuka untuk berbagai fungsi sistem, termasuk manajemen file, multitasking, keamanan, dan jaringan. Sistem operasi memfasilitasi eksekusi program dengan mengatur alokasi sumber daya dan menjalankan proses secara efisien.
 
+# Tugas 3.4
 **3. menjalankan debian**
 
 - melakukan clone ke https://github.com/ferryastika/flops-iops dan masuk ke direktori flops-iops
