@@ -1,7 +1,7 @@
 ## perbedaan paging dan swapping
 - **Paging** <br>
 merupakan kemungkinan solusi untuk permasalahan fragmentasi
-eksternal dimana ruang alamat logika tidak berurutan; mengijinkan sebuah proses
+eksternal dimana ruang alamat logika tidak berurutan dan mengijinkan sebuah proses
 dialokasikan pada memori fisik yang terakhir tersedia. Memori fisik dibagi ke dalam
 blok-blok ukuran tetap yang disebut frame. Memori logika juga dibagi ke dalam blok-blok dg ukuran yang sama yang disebut page.
 Pada skema paging, tidak terjadi fragmentasi eksternal, karena “sembarang”
@@ -15,7 +15,7 @@ page, maka proses tersebut juga membutuhkan n frame. Jika tersedia n frame, maka
 memori dialokasikan untuk proses tersebut. <br>
 
 - **Swapping** <br>
-![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/ab029896-2a58-44d8-924c-507ded6fe091)
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/ab029896-2a58-44d8-924c-507ded6fe091) <br>
 merupakan Sebuah proses yang harus berada pada memori untuk dieksekusi. Proses juga dapat
 ditukar (swap) sementara keluar memori ke backing store dan kemudian dibawa
 kembali ke memori untuk melanjutkan eksekusi. Backing store berupa disk besar dengan kecepatan tinggi yang cukup untuk
