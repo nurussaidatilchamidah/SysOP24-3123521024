@@ -1,3 +1,5 @@
+![image](https://github.com/nurussaidatilchamidah/SysOP24-3123521024/assets/160559227/ab029896-2a58-44d8-924c-507ded6fe091)
+
 ## perbedaan paging dan swapping
 - **Paging** merupakan kemungkinan solusi untuk permasalahan fragmentasi
 eksternal dimana ruang alamat logika tidak berurutan; mengijinkan sebuah proses
